@@ -1,6 +1,3 @@
-# NavMesh in Unity
-Project files for my tutorial on pathfinding using Unity's NavMesh Tools.
+# Laurasia
 
-Check out my [YouTube Channel](http://youtube.com/brackeys) for more tutorials.
-
-Everything is free to use, also commercially (public domain).
+Experimental Real-Time Tactical RPG
