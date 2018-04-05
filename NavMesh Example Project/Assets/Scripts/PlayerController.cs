@@ -1,5 +1,4 @@
-﻿using System.Collections;
-using System.Collections.Generic;
+﻿using UnityStandardAssets.Characters.ThirdPerson;
 using UnityEngine;
 using UnityEngine.AI;
 
@@ -9,10 +8,14 @@ public class PlayerController : MonoBehaviour {
     private Camera mainCam;
     private NavMeshAgent agent;
 
+    public ThirdPersonCharacter character;
+
 	// Use this for initialization
 	void Start () {
         mainCam = Camera.main;
         agent = GetComponent<NavMeshAgent>();
+        agent.updateRotation = false;
+        character = GetComponent<ThirdPersonCharacter>();
     }
 	
 	// Update is called once per frame
@@ -25,5 +28,11 @@ public class PlayerController : MonoBehaviour {
                 agent.SetDestination(hit.point);
             }
         }
-	}
+
+        if (agent.remainingDistance > agent.stoppingDistance) {
+            character.Move(agent.desiredVelocity, false, false);
+        } else {
+            character.Move(Vector3.zero, false, false);
+        }
+    }
 }
