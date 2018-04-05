@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44657844, g: 0.49641222, b: 0.57481694, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657826, g: 0.49641263, b: 0.57481676, a: 1}
 --- !u!157 &3
 LightmapSettings:
   m_ObjectHideFlags: 0
@@ -388,7 +388,7 @@ MonoBehaviour:
   m_OverrideVoxelSize: 0
   m_VoxelSize: 0.16666667
   m_BuildHeightMesh: 0
-  m_NavMeshData: {fileID: 0}
+  m_NavMeshData: {fileID: 23800000, guid: 9fc7e5e16ac17de4bbf16bed501e2797, type: 2}
 --- !u!4 &1007932017
 Transform:
   m_ObjectHideFlags: 0
@@ -446,3 +446,4 @@ MonoBehaviour:
   height: 20
   wall: {fileID: 1958891013373530, guid: 50c2b0c5c4d64eb499af91a6741150ea, type: 2}
   player: {fileID: 1885277800803042, guid: 24a16ae1cdc113a4fbe8be04672f1592, type: 2}
+  surface: {fileID: 1007932016}
