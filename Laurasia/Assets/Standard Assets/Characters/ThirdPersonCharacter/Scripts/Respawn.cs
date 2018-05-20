@@ -10,14 +10,18 @@ public class Respawn : MonoBehaviour {
 
     // Use this for initialization
     void Start () {
-        startPosition = transform.position;
-        startRotation = transform.rotation;
+        UpdateStartRotationAndPosition();
     }
 	
 	// Update is called once per frame
 	void Update () {
 		
 	}
+
+    void UpdateStartRotationAndPosition() {
+        startPosition = transform.position;
+        startRotation = transform.rotation;
+    }
 
     void ResetRotationAndPositionToStart() {
         transform.rotation = startRotation;
@@ -30,6 +34,8 @@ public class Respawn : MonoBehaviour {
             GetComponent<Animator>().Play("LOSE00", -1, 0f);
             GetComponent<Rigidbody>().velocity = new Vector3(0f, 0f, 0f);
             GetComponent<Rigidbody>().angularVelocity = new Vector3(0f, 0f, 0f);
+        }else if (colli.CompareTag("CheckPoint")) {
+            UpdateStartRotationAndPosition();
         }
     }
 }
