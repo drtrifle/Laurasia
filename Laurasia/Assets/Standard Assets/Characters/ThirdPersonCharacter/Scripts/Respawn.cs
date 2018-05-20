@@ -27,6 +27,9 @@ public class Respawn : MonoBehaviour {
     private void OnTriggerEnter(Collider colli) {
         if (colli.CompareTag("Death")) {
             ResetRotationAndPositionToStart();
+            GetComponent<Animator>().Play("LOSE00", -1, 0f);
+            GetComponent<Rigidbody>().velocity = new Vector3(0f, 0f, 0f);
+            GetComponent<Rigidbody>().angularVelocity = new Vector3(0f, 0f, 0f);
         }
     }
 }
