@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 56a6abc2c9a45bf4193193ee9be9f462
+guid: ce4dadfb85e9e47449b8a4be196bb063
 ModelImporter:
   serializedVersion: 22
   fileIDToRecycleName:
@@ -139,7 +139,7 @@ ModelImporter:
     400130: Spine1
     400132: Spine2
     400134: //RootNode
-    7400000: standing walk forward
+    7400000: standing aim overdraw
     9500000: //RootNode
   externalObjects: {}
   materials:
@@ -170,22 +170,22 @@ ModelImporter:
     extraUserProperties: []
     clipAnimations:
     - serializedVersion: 16
-      name: standing walk forward
+      name: standing aim overdraw
       takeName: mixamo.com
       firstFrame: 0
-      lastFrame: 71
+      lastFrame: 226
       wrapMode: 0
       orientationOffsetY: 0
       level: 0
       cycleOffset: 0
       loop: 0
       hasAdditiveReferencePose: 0
-      loopTime: 0
+      loopTime: 1
       loopBlend: 0
-      loopBlendOrientation: 0
+      loopBlendOrientation: 1
       loopBlendPositionY: 0
       loopBlendPositionXZ: 0
-      keepOriginalOrientation: 0
+      keepOriginalOrientation: 1
       keepOriginalPositionY: 1
       keepOriginalPositionXZ: 0
       heightFromFeet: 0

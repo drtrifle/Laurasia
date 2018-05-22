@@ -742,7 +742,7 @@ Transform:
   m_GameObject: {fileID: 487331963}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.9, y: 0.9, z: 1}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 2116487676}
   - {fileID: 1441315854}
@@ -1095,6 +1095,11 @@ Prefab:
       propertyPath: m_RootOrder
       value: 4
       objectReference: {fileID: 0}
+    - target: {fileID: 95558613905701662, guid: e2e67d55df11ab64384a33fb70c6f5a0,
+        type: 2}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: 7ef5155793c1e674eab9280bbe30ef25, type: 2}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: e2e67d55df11ab64384a33fb70c6f5a0, type: 2}
   m_IsPrefabParent: 0
@@ -1387,8 +1392,8 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 823481677}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0.9380734, z: 0}
-  m_LocalScale: {x: 0.9, y: 0.9, z: 1}
+  m_LocalPosition: {x: 0, y: 1.05, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 707281038}
   - {fileID: 1521855587}
@@ -1826,6 +1831,7 @@ GameObject:
   - component: {fileID: 1197797992}
   - component: {fileID: 1197797991}
   - component: {fileID: 1197797990}
+  - component: {fileID: 1197797997}
   m_Layer: 0
   m_Name: Erika
   m_TagString: Player
@@ -1916,9 +1922,9 @@ Animator:
   m_GameObject: {fileID: 1197797989}
   m_Enabled: 1
   m_Avatar: {fileID: 9000000, guid: d32c252a50ff46d48a1f14b634d7a49a, type: 3}
-  m_Controller: {fileID: 9100000, guid: e2cf68ff4b1ffda45a77f7307dd789b9, type: 2}
-  m_CullingMode: 1
-  m_UpdateMode: 0
+  m_Controller: {fileID: 9100000, guid: 419caf3a863bbf044827ee8296dee470, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 1
   m_ApplyRootMotion: 1
   m_LinearVelocityBlending: 0
   m_WarningMessage: 
@@ -1941,6 +1947,17 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1197797997
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1197797989}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ed996bb4954b3ee4e8d0d2dac7035952, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1207485252 stripped
 GameObject:
   m_PrefabParentObject: {fileID: 100000, guid: baec086904791744185aaa07a6cf55c2, type: 2}
@@ -3249,7 +3266,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &2116487676
 Transform:
   m_ObjectHideFlags: 0
