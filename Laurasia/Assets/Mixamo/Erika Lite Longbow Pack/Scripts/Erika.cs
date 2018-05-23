@@ -5,6 +5,7 @@ using UnityEngine;
 public class Erika : MonoBehaviour {
 
     Animator animator;
+    public Transform ArrowHandTransform;
 
 	// Use this for initialization
 	void Start () {
@@ -18,6 +19,7 @@ public class Erika : MonoBehaviour {
 
     void GetPlayerInput() {
         //Update if player is Aiming
+        animator.SetBool("Attack", Input.GetKey(KeyCode.Mouse0));
         animator.SetBool("Aim", Input.GetKey(KeyCode.Mouse1));
     }
 }
