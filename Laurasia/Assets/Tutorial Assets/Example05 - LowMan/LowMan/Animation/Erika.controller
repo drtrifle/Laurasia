@@ -13,49 +13,49 @@ AnimatorController:
     m_DefaultFloat: 0
     m_DefaultInt: 0
     m_DefaultBool: 0
-    m_Controller: {fileID: 0}
+    m_Controller: {fileID: 9100000}
   - m_Name: Turn
     m_Type: 1
     m_DefaultFloat: 0
     m_DefaultInt: 0
     m_DefaultBool: 0
-    m_Controller: {fileID: 0}
+    m_Controller: {fileID: 9100000}
   - m_Name: Crouch
     m_Type: 4
     m_DefaultFloat: 0
     m_DefaultInt: 0
     m_DefaultBool: 0
-    m_Controller: {fileID: 0}
+    m_Controller: {fileID: 9100000}
   - m_Name: OnGround
     m_Type: 4
     m_DefaultFloat: 0
     m_DefaultInt: 0
     m_DefaultBool: 1
-    m_Controller: {fileID: 0}
+    m_Controller: {fileID: 9100000}
   - m_Name: Jump
     m_Type: 1
     m_DefaultFloat: 0
     m_DefaultInt: 0
     m_DefaultBool: 0
-    m_Controller: {fileID: 0}
+    m_Controller: {fileID: 9100000}
   - m_Name: JumpLeg
     m_Type: 1
     m_DefaultFloat: 0
     m_DefaultInt: 0
     m_DefaultBool: 0
-    m_Controller: {fileID: 0}
+    m_Controller: {fileID: 9100000}
   - m_Name: Aim
     m_Type: 4
     m_DefaultFloat: 0
     m_DefaultInt: 0
     m_DefaultBool: 0
-    m_Controller: {fileID: 0}
+    m_Controller: {fileID: 9100000}
   - m_Name: Attack
     m_Type: 4
     m_DefaultFloat: 0
     m_DefaultInt: 0
     m_DefaultBool: 0
-    m_Controller: {fileID: 0}
+    m_Controller: {fileID: 9100000}
   m_AnimatorLayers:
   - serializedVersion: 5
     m_Name: Base Layer
@@ -912,6 +912,17 @@ AnimatorStateMachine:
   m_ExitPosition: {x: 1056, y: 108, z: 0}
   m_ParentStateMachinePosition: {x: 800, y: 20, z: 0}
   m_DefaultState: {fileID: 110298501}
+--- !u!114 &114128850479076240
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 13621d4f8fc332143854c2e9895bf8e6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!206 &206243188365015934
 BlendTree:
   m_ObjectHideFlags: 1
@@ -920,7 +931,7 @@ BlendTree:
   m_Name: Blend Tree
   m_Childs:
   - serializedVersion: 2
-    m_Motion: {fileID: 7400000, guid: ce4dadfb85e9e47449b8a4be196bb063, type: 3}
+    m_Motion: {fileID: 7400000, guid: 47488d2a5b3c28d44bf81a55aba792e7, type: 2}
     m_Threshold: 0.25
     m_Position: {x: 0, y: 0}
     m_TimeScale: 1
@@ -928,7 +939,7 @@ BlendTree:
     m_DirectBlendParameter: Forward
     m_Mirror: 0
   - serializedVersion: 2
-    m_Motion: {fileID: 7400000, guid: ded273971a885eb4084f1416338817b1, type: 3}
+    m_Motion: {fileID: 7400000, guid: b32f316de9e942b4ca3635d697dbc0d0, type: 2}
     m_Threshold: 0.4375
     m_Position: {x: 0, y: 0.5}
     m_TimeScale: 1
@@ -936,7 +947,7 @@ BlendTree:
     m_DirectBlendParameter: Forward
     m_Mirror: 0
   - serializedVersion: 2
-    m_Motion: {fileID: 7400000, guid: 82c1dc7279ed4b54ea7a2bbb637e5ec0, type: 3}
+    m_Motion: {fileID: 7400000, guid: d23fee75f4cab754a9313a976e562d23, type: 2}
     m_Threshold: 0.625
     m_Position: {x: 0, y: -0.5}
     m_TimeScale: 1
@@ -944,7 +955,7 @@ BlendTree:
     m_DirectBlendParameter: Forward
     m_Mirror: 0
   - serializedVersion: 2
-    m_Motion: {fileID: 7400000, guid: 78dcfcae984f11a4591fc10c9a6456c1, type: 3}
+    m_Motion: {fileID: 7400000, guid: 2f17d9a9e2d41a44b8d0ff352dcdacba, type: 2}
     m_Threshold: 0.8125
     m_Position: {x: -0.5, y: 0}
     m_TimeScale: 1
@@ -952,7 +963,7 @@ BlendTree:
     m_DirectBlendParameter: Forward
     m_Mirror: 0
   - serializedVersion: 2
-    m_Motion: {fileID: 7400000, guid: 2ac0e4b2e7e569d47a28faafaf123e55, type: 3}
+    m_Motion: {fileID: 7400000, guid: dca6d606be324554391144aacfc52d63, type: 2}
     m_Threshold: 1
     m_Position: {x: 0.5, y: 0}
     m_TimeScale: 1
@@ -1030,7 +1041,7 @@ AnimatorStateTransition:
   m_Mute: 0
   m_IsExit: 0
   serializedVersion: 3
-  m_TransitionDuration: 0.25
+  m_TransitionDuration: 0
   m_TransitionOffset: 0
   m_ExitTime: 0.8598131
   m_HasExitTime: 0
@@ -1106,7 +1117,7 @@ AnimatorState:
   m_MirrorParameterActive: 0
   m_CycleOffsetParameterActive: 0
   m_TimeParameterActive: 0
-  m_Motion: {fileID: 7400000, guid: dcf452c675a9ae6428875c64675841c9, type: 3}
+  m_Motion: {fileID: 7400000, guid: 968a2729174dc8042bba5c736b7d9e50, type: 2}
   m_Tag: 
   m_SpeedParameter: 
   m_MirrorParameter: 

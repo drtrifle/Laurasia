@@ -5,7 +5,9 @@ using UnityEngine;
 public class Erika : MonoBehaviour {
 
     Animator animator;
-    public Transform ArrowHandTransform;
+    public GameObject ArrowPrefab;
+    public Transform BowTransform;
+    public bool IsFiringArrow;
 
 	// Use this for initialization
 	void Start () {
@@ -19,7 +21,24 @@ public class Erika : MonoBehaviour {
 
     void GetPlayerInput() {
         //Update if player is Aiming
-        animator.SetBool("Attack", Input.GetKey(KeyCode.Mouse0));
+        bool playerLeftClick = Input.GetKeyDown(KeyCode.Mouse0);
+        animator.SetBool("Attack", playerLeftClick);
         animator.SetBool("Aim", Input.GetKey(KeyCode.Mouse1));
+
+        //Player must hold down aim and click attack to fire arrow
+        if (playerLeftClick && Input.GetKey(KeyCode.Mouse1) && !IsFiringArrow) {
+            ShootArrow();
+        }
+    }
+
+    void ShootArrow() {
+        StartCoroutine(ArrowFiringCooldown());
+        Instantiate(ArrowPrefab, BowTransform.position, Quaternion.identity);
+    }
+
+    IEnumerator ArrowFiringCooldown() {
+        IsFiringArrow = true;
+        yield return new WaitForSecondsRealtime(1f);
+        IsFiringArrow = false;
     }
 }
