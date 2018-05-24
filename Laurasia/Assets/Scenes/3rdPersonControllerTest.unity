@@ -652,6 +652,10 @@ Prefab:
       propertyPath: RaycastLayers.m_Bits
       value: 4294967295
       objectReference: {fileID: 0}
+    - target: {fileID: 1613370910017296, guid: c6daf4361b6d49f429196358d38f0cd8, type: 2}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: c6daf4361b6d49f429196358d38f0cd8, type: 2}
   m_IsPrefabParent: 0

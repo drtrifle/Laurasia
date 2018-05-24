@@ -7,7 +7,6 @@ public class Erika : MonoBehaviour {
     Animator animator;
     public GameObject ArrowPrefab;
     public Transform BowTransform;
-    public bool IsFiringArrow;
 
 	// Use this for initialization
 	void Start () {
@@ -26,19 +25,15 @@ public class Erika : MonoBehaviour {
         animator.SetBool("Aim", Input.GetKey(KeyCode.Mouse1));
 
         //Player must hold down aim and click attack to fire arrow
-        if (playerLeftClick && Input.GetKey(KeyCode.Mouse1) && !IsFiringArrow) {
-            ShootArrow();
+        if (playerLeftClick && Input.GetKey(KeyCode.Mouse1)) {
+            //Animator must be in AimGrounded BlendTree
+            if (animator.GetCurrentAnimatorStateInfo(0).IsName("AimGrounded")) {
+                ShootArrow();
+            }
         }
     }
 
     void ShootArrow() {
-        StartCoroutine(ArrowFiringCooldown());
         Instantiate(ArrowPrefab, BowTransform.position, transform.rotation);
-    }
-
-    IEnumerator ArrowFiringCooldown() {
-        IsFiringArrow = true;
-        yield return new WaitForSecondsRealtime(0.9f);
-        IsFiringArrow = false;
     }
 }
