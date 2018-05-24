@@ -21,7 +21,7 @@ public class Erika : MonoBehaviour {
 
     void GetPlayerInput() {
         //Update if player is Aiming
-        bool playerLeftClick = Input.GetKeyDown(KeyCode.Mouse0);
+        bool playerLeftClick = Input.GetKey(KeyCode.Mouse0);
         animator.SetBool("Attack", playerLeftClick);
         animator.SetBool("Aim", Input.GetKey(KeyCode.Mouse1));
 
@@ -33,12 +33,12 @@ public class Erika : MonoBehaviour {
 
     void ShootArrow() {
         StartCoroutine(ArrowFiringCooldown());
-        Instantiate(ArrowPrefab, BowTransform.position, Quaternion.identity);
+        Instantiate(ArrowPrefab, BowTransform.position, transform.rotation);
     }
 
     IEnumerator ArrowFiringCooldown() {
         IsFiringArrow = true;
-        yield return new WaitForSecondsRealtime(1f);
+        yield return new WaitForSecondsRealtime(0.9f);
         IsFiringArrow = false;
     }
 }
