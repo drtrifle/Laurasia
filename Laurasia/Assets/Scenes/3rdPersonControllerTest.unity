@@ -649,12 +649,13 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 114248993424189404, guid: c6daf4361b6d49f429196358d38f0cd8,
         type: 2}
-      propertyPath: RaycastLayers.m_Bits
-      value: 4294967295
+      propertyPath: m_JumpPower
+      value: 7
       objectReference: {fileID: 0}
-    - target: {fileID: 1613370910017296, guid: c6daf4361b6d49f429196358d38f0cd8, type: 2}
-      propertyPath: m_IsActive
-      value: 0
+    - target: {fileID: 114248993424189404, guid: c6daf4361b6d49f429196358d38f0cd8,
+        type: 2}
+      propertyPath: m_GravityMultiplier
+      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: c6daf4361b6d49f429196358d38f0cd8, type: 2}
