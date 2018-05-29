@@ -582,11 +582,80 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &785298575
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 4718388556497612, guid: 02d0446ff54677f4db99a1d49de4de12, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4718388556497612, guid: 02d0446ff54677f4db99a1d49de4de12, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4718388556497612, guid: 02d0446ff54677f4db99a1d49de4de12, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4718388556497612, guid: 02d0446ff54677f4db99a1d49de4de12, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4718388556497612, guid: 02d0446ff54677f4db99a1d49de4de12, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4718388556497612, guid: 02d0446ff54677f4db99a1d49de4de12, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4718388556497612, guid: 02d0446ff54677f4db99a1d49de4de12, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4718388556497612, guid: 02d0446ff54677f4db99a1d49de4de12, type: 2}
+      propertyPath: m_RootOrder
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 1479652561501924, guid: 02d0446ff54677f4db99a1d49de4de12, type: 2}
+      propertyPath: m_Name
+      value: PaladinPrefab
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: 02d0446ff54677f4db99a1d49de4de12, type: 2}
+  m_IsPrefabParent: 0
 --- !u!4 &1083407892 stripped
 Transform:
   m_PrefabParentObject: {fileID: 4315653323560498, guid: e2e67d55df11ab64384a33fb70c6f5a0,
     type: 2}
   m_PrefabInternal: {fileID: 612378772}
+--- !u!1 &1091922106 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1479652561501924, guid: 02d0446ff54677f4db99a1d49de4de12,
+    type: 2}
+  m_PrefabInternal: {fileID: 785298575}
+--- !u!4 &1091922113 stripped
+Transform:
+  m_PrefabParentObject: {fileID: 4718388556497612, guid: 02d0446ff54677f4db99a1d49de4de12,
+    type: 2}
+  m_PrefabInternal: {fileID: 785298575}
+--- !u!114 &1091922114
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1091922106}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 133abdd2c42838b438a6cedeb5f3f424, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ArrowPrefab: {fileID: 0}
+  BowTransform: {fileID: 0}
 --- !u!1 &1207485252 stripped
 GameObject:
   m_PrefabParentObject: {fileID: 100000, guid: baec086904791744185aaa07a6cf55c2, type: 2}
@@ -656,6 +725,10 @@ Prefab:
         type: 2}
       propertyPath: m_GravityMultiplier
       value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1010937356106702, guid: c6daf4361b6d49f429196358d38f0cd8, type: 2}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: c6daf4361b6d49f429196358d38f0cd8, type: 2}
@@ -936,11 +1009,6 @@ Transform:
   m_Father: {fileID: 2051470198}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!4 &2016037883 stripped
-Transform:
-  m_PrefabParentObject: {fileID: 4831664298673282, guid: c6daf4361b6d49f429196358d38f0cd8,
-    type: 2}
-  m_PrefabInternal: {fileID: 1302722790}
 --- !u!1 &2051470197
 GameObject:
   m_ObjectHideFlags: 0
@@ -1003,7 +1071,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e44af8091779fcb40801d5b284353dbe, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Target: {fileID: 2016037883}
+  m_Target: {fileID: 1091922113}
   m_AutoTargetPlayer: 1
   m_UpdateType: 0
   m_MoveSpeed: 5
